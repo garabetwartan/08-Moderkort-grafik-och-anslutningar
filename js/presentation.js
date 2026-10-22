@@ -15,7 +15,7 @@ const slides = [
       "Moderkortet gör att komponenterna kan kommunicera med varandra.",
       "Det har anslutningar för både interna och externa enheter."
     ],
-    image: "Moderkort.jpg",
+    image: "moderkort.jpg",
     caption: "Ett moderkort med flera olika anslutningar."
   },
 
