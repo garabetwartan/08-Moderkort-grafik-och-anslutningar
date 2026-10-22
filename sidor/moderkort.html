@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Moderkortsdetektiven | IT Lab</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/moderkort.js" defer></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="logo" href="../index.html">◈ IT LAB</a>
+  <span>Lektion 08 · Informationsteknik nivå 1</span>
+</header>
+
+<main class="container">
+
+  <!-- INTRODUKTION -->
+  <section class="hero">
+    <span class="eyebrow">UPPGIFT 01</span>
+
+    <h1>Moderkortsdetektiven</h1>
+
+    <p>
+      Utforska moderkortets viktigaste delar.
+      Klicka på de numrerade punkterna och
+      identifiera rätt komponent.
+    </p>
+  </section>
+
+  <!-- INSTRUKTIONER -->
+  <section class="section card">
+    <h2>Så fungerar uppgiften</h2>
+
+    <ol>
+      <li>Klicka på en numrerad punkt på moderkortet.</li>
+      <li>Välj vilken komponent punkten visar.</li>
+      <li>Du får direkt återkoppling på ditt svar.</li>
+      <li>Identifiera alla åtta delar för att klara uppgiften.</li>
+    </ol>
+
+    <p>
+      Dina framsteg sparas automatiskt.
+      Du kan göra om uppgiften hur många gånger du vill.
+    </p>
+  </section>
+
+  <!-- INTERAKTIVT MODERKORT -->
+  <section class="section card">
+
+    <h2>Identifiera åtta delar</h2>
+
+    <p>
+      Klicka på en numrerad punkt och välj rätt benämning.
+      Komponenternas namn är dolda på bilden.
+    </p>
+
+    <div class="motherboard-container">
+
+      <svg
+        viewBox="0 0 760 460"
+        xmlns="http://www.w3.org/2000/svg"
+        role="group"
+        aria-labelledby="boardTitle boardDesc"
+        style="
+          width:100%;
+          max-width:760px;
+          display:block;
+          margin:auto;
+        "
+      >
+
+        <title id="boardTitle">
+          Interaktivt moderkort
+        </title>
+
+        <desc id="boardDesc">
+          Förenklad illustration av ett moderkort
+          med åtta numrerade, klickbara punkter.
+          Identifiera vilken komponent varje punkt visar.
+        </desc>
+
+        <!-- BAKGRUND -->
+        <rect
+          x="10" y="10"
+          width="740" height="440"
+          rx="24"
+          fill="#edf2ff"
+        />
+
+        <!-- MODERKORT -->
+        <rect
+          x="105" y="35"
+          width="550" height="390"
+          rx="20"
+          fill="#2e827e"
+          stroke="#205e60"
+          stroke-width="8"
+        />
+
+        <!-- KRETSBANOR -->
+        <g
+          stroke="#78c4b4"
+          stroke-width="4"
+          fill="none"
+          opacity=".55"
+        >
+          <path d="M140 110 H360 V75"/>
+          <path d="M140 245 H210 V365 H540"/>
+          <path d="M325 205 H390"/>
+          <path d="M510 100 V185 H600"/>
+          <path d="M135 340 H300"/>
+        </g>
+
+        <!-- KOMPONENT 1: PROCESSORSOCKEL -->
+        <rect
+          x="195" y="105"
+          width="160" height="145"
+          rx="12"
+          fill="#a7bad3"
+          stroke="#243b57"
+          stroke-width="7"
+        />
+
+        <rect
+          x="215" y="125"
+          width="120" height="105"
+          fill="#dce6f5"
+        />
+
+        <!-- KOMPONENT 2: RAM-PLATSER -->
+        <rect
+          x="395" y="90"
+          width="25" height="180"
+          rx="4"
+          fill="#203654"
+        />
+
+        <rect
+          x="435" y="90"
+          width="25" height="180"
+          rx="4"
+          fill="#203654"
+        />
+
+        <!-- KOMPONENT 3: PCIe x16 -->
+        <rect
+          x="190" y="305"
+          width="320" height="25"
+          rx="5"
+          fill="#172c4b"
+        />
+
+        <!-- KOMPONENT 4: M.2-PLATS -->
+        <rect
+          x="300" y="365"
+          width="190" height="15"
+          rx="4"
+          fill="#c4a5f5"
+        />
+
+        <!-- KOMPONENT 5: SATA-ANSLUTNINGAR -->
+        <rect
+          x="555" y="305"
+          width="58" height="24"
+          rx="4"
+          fill="#e9dba2"
+        />
+
+        <rect
+          x="555" y="335"
+          width="58" height="24"
+          rx="4"
+          fill="#e9dba2"
+        />
+
+        <!-- KOMPONENT 6: 24-PINS STRÖM -->
+        <rect
+          x="568" y="135"
+          width="48" height="85"
+          rx="6"
+          fill="#e9dba2"
+        />
+
+        <!-- KOMPONENT 7: CPU-STRÖM -->
+        <rect
+          x="160" y="55"
+          width="90" height="25"
+          fill="#f0cf95"
+        />
+
+        <!-- KOMPONENT 8: BAKRE ANSLUTNINGAR -->
+        <rect
+          x="108" y="88"
+          width="42" height="190"
+          fill="#9bb4c7"
+        />
+
+        <!-- NUMRERADE PUNKTER -->
+        <!-- Skapas automatiskt med JavaScript -->
+        <g id="hotspots"></g>
+
+      </svg>
+
+    </div>
+
+    <!-- FRÅGOR OCH SVARSALTERNATIV -->
+    <div
+      id="questionPanel"
+      class="card"
+      style="margin-top:20px;"
+      hidden
+    >
+
+      <h3 id="questionTitle"></h3>
+
+      <p>Vilken komponent visar punkten?</p>
+
+      <div id="answerOptions"></div>
+
+      <div
+        id="answerFeedback"
+        class="feedback"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+    </div>
+
+    <!-- RESULTAT -->
+    <div style="margin-top:25px;">
+
+      <h3 id="progressText">
+        Identifierade: 0 / 8
+      </h3>
+
+      <progress
+        id="progressBar"
+        value="0"
+        max="8"
+        style="width:100%;height:20px;"
+      ></progress>
+
+    </div>
+
+    <!-- MEDDELANDE VID KLAR UPPGIFT -->
+    <div
+      id="completionMessage"
+      class="feedback"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <!-- GÖR OM UPPGIFTEN -->
+    <button
+      id="resetMotherboard"
+      class="btn"
+      type="button"
+      style="margin-top:20px;"
+    >
+      ↻ Gör om uppgiften
+    </button>
+
+  </section>
+
+  <!-- NAVIGERING -->
+  <nav class="page-nav">
+
+    <a href="../index.html">
+      ← Startsida
+    </a>
+
+    <a href="anslutningar.html">
+      Nästa uppgift →
+    </a>
+
+  </nav>
+
+</main>
+
+<footer>
+  IT LAB · Lektion 08
+</footer>
+
+</body>
+</html>

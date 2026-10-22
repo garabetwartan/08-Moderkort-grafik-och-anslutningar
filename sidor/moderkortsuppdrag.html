@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+
+  <title>Moderkortsuppdraget – IT Lab</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/moderkortsuppdrag.js"></script>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="../index.html">◈ IT LAB</a>
+
+  <nav>
+    <a href="../index.html">Start</a>
+    <a href="presentation.html">Presentation</a>
+    <a href="grafikkortsprojekt.html">Grafikkortsprojekt</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <span class="eyebrow">
+      LEKTION 08 · MODERKORT
+    </span>
+
+    <h1>Moderkortsuppdraget</h1>
+
+    <p>
+      Undersök kontakter, lär dig om chipset
+      och välj kompatibla datorkomponenter.
+    </p>
+  </section>
+
+
+  <!-- DEL 1: ANSLUTNINGAR -->
+
+  <section class="card">
+    <h2>Del 1 – Undersök kontakterna</h2>
+
+    <p>
+      Läs den korta förklaringen under varje kontakt.
+      Välj sedan rätt användningsområde.
+    </p>
+
+    <div id="connections"></div>
+
+    <button id="checkConnections" type="button">
+      Rätta svaren
+    </button>
+
+    <button id="resetConnections" type="button">
+      Gör om
+    </button>
+
+    <div
+      id="connectionResult"
+      class="feedback"
+      aria-live="polite">
+    </div>
+  </section>
+
+
+  <!-- DEL 2: MODERKORTETS EGENSKAPER -->
+
+  <section class="card">
+    <h2>Del 2 – Moderkortets egenskaper</h2>
+
+    <label for="formfactor">
+      1. Vad är skillnaden mellan ATX och micro-ATX?
+    </label>
+
+    <textarea
+      id="formfactor"
+      placeholder="Skriv ditt svar...">
+    </textarea>
+
+    <label for="chipset">
+      2. Vad är ett chipset och vad har det för uppgift?
+    </label>
+
+    <textarea
+      id="chipset"
+      placeholder="Skriv ditt svar...">
+    </textarea>
+
+    <button id="showHints" type="button">
+      Visa förklaringar
+    </button>
+
+    <div
+      id="hints"
+      class="feedback"
+      aria-live="polite">
+    </div>
+  </section>
+
+
+  <!-- DEL 3: BYGG FÖR 6000 KR -->
+
+  <section class="card">
+    <h2>Del 3 – Bygg för 6 000 kr</h2>
+
+    <p>
+      Välj ett moderkort från ASUS, ASRock,
+      MSI eller Gigabyte.
+      Hitta sedan en kompatibel processor
+      och 16 GB RAM.
+      Målet är att komma så nära 6 000 kr
+      som möjligt.
+    </p>
+
+    <p>
+      Använd
+      <a
+        href="https://www.prisjakt.nu/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Prisjakt
+      </a>
+      för att undersöka aktuella priser.
+    </p>
+
+    <div id="budget"></div>
+
+    <button id="calculate" type="button">
+      Beräkna totalsumman
+    </button>
+
+    <div
+      id="budgetResult"
+      class="feedback"
+      aria-live="polite">
+    </div>
+  </section>
+
+
+  <!-- AVSLUTANDE KONTROLL -->
+
+  <section class="card">
+    <h2>Avslutande kontroll</h2>
+
+    <p>
+      Kontrollera att du har undersökt alla delar.
+    </p>
+
+    <div id="checklist"></div>
+
+    <p id="progressText" class="status"></p>
+  </section>
+
+
+  <!-- NÄSTA MOMENT -->
+
+  <a class="btn" href="grafikkortsprojekt.html">
+    Nästa moment →
+  </a>
+
+</main>
+
+<footer>
+  Informationsteknik nivå 1 · Lektion 08
+</footer>
+
+</body>
+</html>

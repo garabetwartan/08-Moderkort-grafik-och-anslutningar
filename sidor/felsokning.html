@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Felsökningsverkstad – IT Lab</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/felsokning.js"></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="../index.html">◈ IT LAB</a>
+    <nav>
+      <a href="../index.html">Start</a>
+      <a href="presentation.html">Presentation</a>
+      <a href="moderkort.html">Moderkort</a>
+      <a href="anslutningar.html">Anslut rätt</a>
+      <a href="felsokning.html">Felsökning</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">
+        LEKTION 08 · INFORMATIONSTEKNIK 1
+      </span>
+      <h1>Felsökningsverkstad</h1>
+      <p>
+        Lös ett verklighetsnära datorproblem.
+        Använd en ledtråd om du behöver hjälp.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Uppdrag: Varför är skärmen svart?</h2>
+
+      <p>
+        En elev startar sin dator. Fläktarna snurrar,
+        men skärmen visar ingen bild.
+      </p>
+
+      <p>
+        Datorn har ett separat grafikkort, men
+        bildskärmens HDMI-kabel är ansluten
+        till moderkortets HDMI-port.
+      </p>
+
+      <label for="answer">
+        Vad tror du är problemet och hur skulle
+        du försöka lösa det?
+      </label>
+
+      <textarea
+        id="answer"
+        placeholder="Skriv din förklaring här...">
+      </textarea>
+
+      <div class="row">
+        <button id="hintBtn" type="button">
+          Visa ledtråd
+        </button>
+
+        <button id="checkBtn" type="button">
+          Kontrollera mitt svar
+        </button>
+
+        <button id="resetBtn" type="button">
+          Försök igen
+        </button>
+      </div>
+
+      <p id="hint" class="feedback hidden"></p>
+      <div id="feedback" class="feedback" role="status"></div>
+    </section>
+
+    <div class="row">
+      <a class="btn" href="../index.html">
+        ← Tillbaka till momenten
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Informationsteknik nivå 1 · Lektion 08
+  </footer>
+</body>
+</html>

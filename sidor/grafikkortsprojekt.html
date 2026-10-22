@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Grafikkortsprojektet – IT Lab</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/grafikkortsprojekt.js"></script>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="../index.html">◈ IT LAB</a>
+  <nav>
+    <a href="../index.html">Start</a>
+    <a href="presentation.html">Presentation</a>
+    <a href="moderkortsuppdrag.html">Moderkortsuppdrag</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <span class="eyebrow">LEKTION 08 · GRAFIKKORT</span>
+    <h1>Grafikkortsprojektet</h1>
+    <p>Arbeta i par. Jämför fem grafikkort och skapa en egen PowerPoint eller Google Presentation.</p>
+  </section>
+
+  <section class="card">
+    <h2>Uppdraget</h2>
+
+    <p>Ni ska undersöka fem olika grafikkort och presentera vilket som passar bäst för ett valt användningsområde.</p>
+
+    <ol>
+      <li>Arbeta två och två.</li>
+      <li>Välj fem olika grafikkort.</li>
+      <li>Välj ett användningsområde, exempelvis gaming, AI eller videoredigering.</li>
+      <li>Undersök tekniska egenskaper och priser.</li>
+      <li>Jämför korten och motivera era slutsatser.</li>
+      <li>Skapa en tydlig och snygg presentation.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Del 1 – Undersök fem grafikkort</h2>
+    <p>Fyll i informationen för varje grafikkort.</p>
+
+    <div id="gpuCards"></div>
+  </section>
+
+  <section class="card">
+    <h2>Del 2 – Jämför grafikkorten</h2>
+
+    <label for="bestPerformance">Vilket grafikkort har bäst prestanda?</label>
+    <textarea id="bestPerformance" placeholder="Ange grafikkort och motivera med fakta..."></textarea>
+
+    <label for="bestValue">Vilket ger bäst prestanda för pengarna?</label>
+    <textarea id="bestValue" placeholder="Jämför pris och prestanda..."></textarea>
+
+    <label for="conclusion">Vilket skulle ni rekommendera och varför?</label>
+    <textarea id="conclusion" placeholder="Skriv er slutsats..."></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Del 3 – Frågor om grafikkort</h2>
+    <p>Diskutera frågorna i par och använd svaren i er presentation.</p>
+
+    <div id="questions"></div>
+  </section>
+
+  <section class="card">
+    <h2>Del 4 – Skapa er PowerPoint</h2>
+
+    <p>Presentationens innehåll ska följa denna struktur:</p>
+
+    <ol>
+      <li>Titelsida med era namn.</li>
+      <li>Vad är en GPU och vad används den till?</li>
+      <li>Presentation av fem grafikkort.</li>
+      <li>Jämförelse av pris och tekniska egenskaper.</li>
+      <li>Vinnare – bäst prestanda.</li>
+      <li>Vinnare – bäst pris/prestanda.</li>
+      <li>Slutsats och rekommendation.</li>
+      <li>Källor.</li>
+    </ol>
+
+    <p>Använd bilder, tabeller och korta förklaringar. Skriv med egna ord.</p>
+
+    <h3>Checklista</h3>
+    <div id="checklist"></div>
+    <p id="progressText" class="status"></p>
+  </section>
+
+  <section class="card">
+    <h2>Exportera ditt arbete</h2>
+    <p>Du kan spara dina anteckningar som en textfil. Själva presentationen gör du separat.</p>
+    <button id="exportProject" type="button">Exportera anteckningar</button>
+  </section>
+
+  <a class="btn" href="quiz.html">Till quiz och exit ticket →</a>
+
+</main>
+
+<footer>Informationsteknik nivå 1 · Lektion 08</footer>
+
+</body>
+</html>

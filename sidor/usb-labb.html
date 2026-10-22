@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="referrer" content="no-referrer">
+
+  <title>USB-laboratoriet | IT Lab</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script defer src="../js/usb-labb.js"></script>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="../index.html">
+    ◈ IT LAB
+  </a>
+
+  <nav aria-label="Huvudmeny">
+    <a href="../index.html">Start</a>
+    <a href="kommunikation.html">Föregående</a>
+    <a href="bildskarm-labb.html">Nästa</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- INTRODUKTION -->
+
+  <section class="hero">
+
+    <span class="eyebrow">
+      LEKTION 08 
+    </span>
+
+    <h1>USB-laboratoriet</h1>
+
+    <p>
+      Undersök hur USB-standard, filstorlek
+      och överföringshastighet hänger ihop.
+    </p>
+
+  </section>
+
+
+  <!-- SIMULERING -->
+
+  <section class="card">
+
+    <h2>Simulera en filöverföring</h2>
+
+    <p>
+      Välj en USB-standard och hur stor fil
+      du vill överföra. Beräkna sedan hur
+      lång tid överföringen tar.
+    </p>
+
+    <label for="usb">
+      USB-standard
+    </label>
+
+    <select id="usb">
+
+      <option value="480">
+        USB 2.0 – 480 Mbit/s
+      </option>
+
+      <option value="5000">
+        USB 5 Gbit/s
+      </option>
+
+      <option value="10000">
+        USB 10 Gbit/s
+      </option>
+
+      <option value="20000">
+        USB 20 Gbit/s
+      </option>
+
+    </select>
+
+
+    <label for="size">
+      Filstorlek (GB):
+      <output id="sizeValue" for="size">10</output>
+    </label>
+
+    <input
+      type="range"
+      id="size"
+      min="1"
+      max="100"
+      value="10"
+      step="1"
+    >
+
+
+    <button id="calculate" type="button">
+      Beräkna överföringstid
+    </button>
+
+
+    <!-- RESULTAT OCH UTRÄKNING -->
+
+    <div
+      id="result"
+      class="feedback"
+      role="status"
+      aria-live="polite">
+    </div>
+
+  </section>
+
+
+  <!-- KUNSKAPSFRÅGOR -->
+
+  <section class="card">
+
+    <h2>Undersök själv</h2>
+
+    <p>
+      Svara på tre frågor om USB-anslutningar
+      och överföringshastigheter.
+    </p>
+
+    <div id="exercise"></div>
+
+
+    <div class="row">
+
+      <button
+        id="checkAnswers"
+        type="button">
+        Kontrollera svar
+      </button>
+
+      <button
+        id="resetAnswers"
+        type="button">
+        ↻ Gör om
+      </button>
+
+    </div>
+
+
+    <!-- FEEDBACK PÅ FRÅGORNA -->
+
+    <div
+      id="feedback"
+      class="feedback"
+      role="status"
+      aria-live="polite">
+    </div>
+
+  </section>
+
+
+  <!-- NÄSTA MOMENT -->
+
+  <div class="row">
+
+    <a class="btn" href="kommunikation.html">
+      ← Föregående moment
+    </a>
+
+    <a class="btn" href="bildskarm-labb.html">
+      Nästa moment →
+    </a>
+
+  </div>
+
+</main>
+
+
+<footer>
+  Informationsteknik nivå 1 · Lektion 08
+</footer>
+
+</body>
+</html>

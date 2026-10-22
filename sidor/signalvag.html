@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+
+  <title>Datorns signalväg | IT Lab</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/signalvag.js"></script>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="../index.html">◈ IT LAB</a>
+
+  <nav aria-label="Huvudmeny">
+    <a href="../index.html">Start</a>
+    <a href="presentation.html">Presentation</a>
+    <a href="moderkort.html">Moderkort</a>
+    <a href="anslutningar.html">Anslut rätt</a>
+    <a href="datorbyggare.html">Datorbyggare</a>
+    <a href="grafik.html">Grafik</a>
+    <a href="felsokning.html">Felsökning</a>
+    <a href="sant-eller-falskt.html">Sant eller falskt</a>
+    <a href="it-teknikern.html">IT-teknikern</a>
+    <a href="hitta-felet.html">Hitta felet</a>
+    <a href="signalvag.html" aria-current="page">Signalväg</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <span class="eyebrow">
+      LEKTION 08 
+    </span>
+
+    <h1 id="pageTitle">Datorns signalväg</h1>
+
+    <p id="pageIntro">
+      Utforska hur datorns komponenter samarbetar.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Vad händer inuti datorn?</h2>
+
+    <p>
+      När du skriver på tangentbordet eller öppnar
+      en fil samarbetar flera komponenter.
+      Men i vilken ordning sker de olika stegen?
+    </p>
+
+    <p id="instructions">
+      Placera händelserna i rätt ordning.
+    </p>
+
+    <ol>
+      <li>Läs scenariot.</li>
+      <li>Välj vilken händelse som sker först.</li>
+      <li>Fortsätt tills alla steg har placerats.</li>
+      <li>Använd varje steg endast en gång.</li>
+      <li>Kontrollera ordningen och försök igen vid behov.</li>
+    </ol>
+
+    <p class="muted">
+      Tänk på att detta är förenklade modeller av hur
+      datorn arbetar. Flera processer kan i verkligheten
+      ske samtidigt.
+    </p>
+  </section>
+
+  <section id="exercise"
+           aria-label="Sortera datorns signalvägar">
+  </section>
+
+  <section class="card">
+    <h2>Kontrollera ordningen</h2>
+
+    <div class="row">
+      <button id="checkAnswers" type="button">
+        Kontrollera signalvägen
+      </button>
+
+      <button id="resetAnswers" type="button">
+        ↻ Gör om uppgiften
+      </button>
+    </div>
+
+    <div id="result"
+         class="feedback"
+         role="status"
+         aria-live="polite">
+    </div>
+  </section>
+
+  <div class="row">
+    <a class="btn" href="hitta-felet.html">
+      ← Föregående uppgift
+    </a>
+
+    <a class="btn" href="quiz.html">
+      Till slutquiz och exit ticket →
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  Informationsteknik nivå 1 · Lektion 08
+</footer>
+
+</body>
+</html>

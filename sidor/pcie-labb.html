@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>PCIe-laboratoriet | IT Lab</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/pcie-labb.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">◈ IT LAB</a>
+  <nav><a href="../index.html">Start</a>
+    <a href="bildskarm-labb.html">Föregående</a>
+    <a href="energi.html">Nästa</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <span class="eyebrow">LEKTION 08 </span>
+    <h1>PCIe-laboratoriet</h1>
+    <p>Testa hur generation och antal PCIe-banor påverkar maximal bandbredd.</p>
+  </section>
+  <section class="card">
+    <h2>Konfigurera anslutningen</h2>
+    <label for="generation">PCIe-generation</label>
+    <select id="generation">
+      <option value="3">PCIe 3.0</option>
+      <option value="4">PCIe 4.0</option>
+      <option value="5">PCIe 5.0</option>
+    </select>
+    <label for="lanes">Antal banor</label>
+    <select id="lanes">
+      <option value="1">x1</option>
+      <option value="4">x4</option>
+      <option value="8">x8</option>
+      <option value="16">x16</option>
+    </select>
+    <button id="calculate">Beräkna bandbredd</button>
+    <div id="result" class="feedback" aria-live="polite"></div>
+  </section>
+  <section class="card">
+    <h2>Utmaning</h2>
+    <div id="exercise"></div>
+    <button id="checkAnswers">Kontrollera</button>
+    <button id="resetAnswers">Gör om</button>
+    <div id="feedback" class="feedback" aria-live="polite"></div>
+  </section>
+  <a class="btn" href="energi.html">Nästa moment →</a>
+</main>
+<footer>Informationsteknik nivå 1 · Lektion 08</footer>
+</body>
+</html>
